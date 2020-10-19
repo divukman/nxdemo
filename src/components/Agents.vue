@@ -14,6 +14,11 @@
         <h1 class="display-2 font-weight-bold mb-3">
           NXDemo AGENTS
         </h1>
+
+        <agent agentName="Agent1" />
+        <agent agentName="Agent2" /> 
+        <agent agentName="Agent3" /> 
+        <agent agentName="Agent4" /> 
       </v-col>
 
       <v-col
@@ -34,8 +39,15 @@
 </template>
 
 <script>
+
+import Agent from '../components/Agent';
+
   export default {
     name: 'Agents',
+
+    components: {
+      Agent
+    },
 
     data: () => ({
     })
